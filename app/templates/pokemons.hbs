@@ -1,7 +1,15 @@
 <h3>Pokemon list</h3>
 
-{{#each model as |pokemon|}}
-  {{pokemon-list-element pokemon=pokemon}}
-{{/each}}
+<div class="pokemons">
+  <div class="pokemons__list">
+    {{#each model as |pokemon|}}
+      {{#link-to 'pokemons.pokemon' pokemon.id class="link"}}
+        {{pokemon-list-element pokemon=pokemon}}
+      {{/link-to}}
+    {{/each}}
+  </div>
 
-{{outlet}}
+  <div class="pokemons__details">
+    {{outlet}}
+  </div>
+</div>

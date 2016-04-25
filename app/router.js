@@ -7,7 +7,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('index', { path: '/' });
-  this.route('pokemons');
+  this.route('pokemons', function() {
+    this.route('pokemon', { path: '/:id' });
+  });
 });
 
 export default Router;

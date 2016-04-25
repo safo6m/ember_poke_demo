@@ -31,7 +31,7 @@ module.exports = function(environment) {
     ENV.apiEndpoint = 'api/v2';
 
     ENV['ember-cli-mirage'] = {
-      enabled: true
+      enabled: false
     };
   }
 
