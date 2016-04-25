@@ -1,0 +1,12 @@
+.pokemons {
+  display: flex;
+
+  .pokemons__list {
+    flex: 1;
+  }
+
+  .pokemons__details {
+    flex: 1;
+    padding-left: 50px;
+  }
+}
