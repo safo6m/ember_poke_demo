@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    childNameClicked(pokemonName) {
+    childAvatarClicked(pokemonName) {
       alert(`${pokemonName} from parent`);
     }
   }

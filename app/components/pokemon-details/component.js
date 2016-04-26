@@ -10,10 +10,7 @@ export default Ember.Component.extend({
   actions: {
     onAvatarClick() {
       alert(`I'm ${this.get('pokemon.name')}`);
-    },
-
-    onNameClick() {
-      this.sendAction('nameClicked', this.get('pokemon.name'));
+      this.sendAction('avatarClicked', this.get('pokemon.name'));
     }
   }
 });
